@@ -7,12 +7,14 @@ import com.devmountain.noteApp.repositories.NoteRepository;
 import com.devmountain.noteApp.repositories.UserRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Service
 public class NoteServiceImpl implements NoteService {
     @Autowired
     private UserRepository userRepository;
